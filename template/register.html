@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SignUp-Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+      <div>
+       <h2>We Are Glad to have You</h2>
+      </div>
+      <!-- This div is for whole signup box -->
+     <div class="SignUp-box">
+       <h3>Sign Up</h3>
+       <form method="POST" action="{{ url_for('register') }}">
+        {{ form.hidden_tag() }}
+        {{ form.username }}
+         <br><br>
+         {{ form.password }}
+         <br><br>
+         {{ form.submit_signup }}
+         <!-- <button type="submit" name="signup" value="signup" id="signupbutton">Sign Up</button> -->
+       </form>
+        <div id="login-link">
+          <a href="{{ url_for('login') }}">Already have an account? Log In</a>
+        </div>
+    </div>
+</body>
+</html>

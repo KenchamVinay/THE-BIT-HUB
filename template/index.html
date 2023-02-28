@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log-In-Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+      <div>
+       <h2>Welcome Back !</h2>
+      </div>
+      <!-- This div is for whole login box -->
+     <div class="login-box">
+       <h3>Log In</h3>
+       <form method="POST" action="{{ url_for('login') }}">
+        {{ form.hidden_tag() }}
+        {{ form.username }}
+         <br><br>
+         {{ form.password }}
+         <br><br>
+         {{ form.submit_login }}
+         <!-- <button type="submit" name="login" value="login" id="loginbutton">Log In</button>
+         <button type="submit" name="signup" value="signup" id="signupbutton">Sign Up</button> -->
+       </form>
+       </form>
+        <div id="reguster-link">
+          <a href="{{ url_for('register') }}">Don't have an account? Sign Up</a>
+        </div>
+    </div>
+</body>
+</html>

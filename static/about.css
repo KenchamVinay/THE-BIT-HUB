@@ -1,0 +1,16 @@
+.container{
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 290px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+ h1,h2{
+    text-align: center;
+    /* text-indent: 330px; */
+    color: rgb(85, 83, 83);
+    margin-top: 30px;
+    /* margin-bottom: 30px; */
+
+ }
